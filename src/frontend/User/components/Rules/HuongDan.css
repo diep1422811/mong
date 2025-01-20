@@ -1,0 +1,90 @@
+/* Nhúng các font từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+/* HuongDan.css */
+
+.huongdan-container {
+  padding: 20px;
+  font-family: 'Varela Round', sans-serif; /* Chỉnh font của phần văn bản */
+  background-color: #fef6f9;
+  color: #333;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.huongdan-container h1 {
+  font-family: 'Quicksand', sans-serif; /* Dùng font Quicksand cho tiêu đề */
+  font-size: 30px;
+  color: #d17c90;
+  margin-bottom: 20px;
+  text-align: left; /* Căn trái */
+  border-bottom: 2px solid #f1c4cc;
+  padding-bottom: 10px;
+}
+
+.huongdan-container h2 {
+  font-family: 'Quicksand', sans-serif; /* Dùng font Quicksand cho các tiêu đề phụ */
+  font-size: 24px;
+  color: #a14461;
+  margin-bottom: 15px;
+  border-left: 4px solid #d17c90;
+  padding-left: 10px;
+}
+
+.huongdan-container p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.huongdan-container ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-bottom: 15px;
+}
+
+.huongdan-container li {
+  margin-bottom: 10px;
+}
+
+.huongdan-container ol {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.huongdan-container strong {
+  color: #c0392b;
+}
+
+.huongdan-container .welcome-message {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  color: #eeb8c9;
+  margin-bottom: 20px;
+}
+
+.huongdan-container .closing-message {
+  font-family: 'Quicksand', sans-serif; /* Dùng font Quicksand cho các tiêu đề phụ */
+  font-size: 24px;
+  color: #a14461;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+article {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}

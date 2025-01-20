@@ -1,0 +1,147 @@
+/* Container chính */
+.profile-container {
+  /* Rectangle 27 */
+  background: rgba(230, 62, 93, 0.2);
+  border-radius: 40px;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 670px;
+  margin: 20px auto;
+  height: 450px; /* Đảm bảo đủ chiều cao để căn giữa */
+}
+
+/* Phần menu bên trái */
+.profile-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #e8697e;
+  border-radius: 40px 0px 0px 40px;
+  color: white;
+  padding: 10px;
+  width: 50px; /* Chiều rộng khi đóng */
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.profile-left.expanded {
+  width: 230px; /* Chiều rộng khi mở */
+}
+
+/* Nút toggle */
+.dropdown-toggle-btn {
+  background-color: #e8697e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dropdown-toggle-btn:hover {
+  color: #d43c5e;
+  transform: scale(1.1);
+}
+
+/* Danh sách menu */
+.dropdown-menuu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* Khoảng cách giữa các item */
+  opacity: 0;
+  justify-content: center;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+  margin-top: 10px;
+  width: 90%;
+}
+.book-image {
+  display: block;
+  margin: 0 auto; /* Căn giữa ảnh */
+  width: 100%; /* Đảm bảo ảnh chiếm hết chiều rộng của khung */
+  height: auto; /* Giữ tỷ lệ gốc của ảnh */
+}
+
+
+.dropdown-menuu.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Các item trong menu */
+.dropdown-itemm {
+  padding: 10px 15px;
+  background-color: rgb(254, 232, 232);
+  color: #333;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.dropdown-itemm:hover {
+  background-color: #E53E5D;
+  color: white;
+}
+
+/* Phần giữa (Icon và tên người dùng) */
+.profile-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+
+.profile-avatar {
+  font-size: 100px; /* Tăng kích thước icon */
+  color: #f04d67;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Phần nội dung bên phải */
+.profile-right {
+  flex: 1.5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Căn giữa theo chiều dọc */
+}
+
+.profile-right h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+.profile-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-right li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  text-align: left; /* Căn lề trái */
+}

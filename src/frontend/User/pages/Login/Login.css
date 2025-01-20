@@ -1,0 +1,86 @@
+/* Áp dụng cho trang đăng nhập */
+body.login-page, html.login-page {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+  }
+  
+  .login-page .wrapperr {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  .login-page h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .login-page h2 {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 25px;
+  }
+  
+  .login-page .input-boxx {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .login-page .input-boxx input {
+    width: 100%;
+    padding: 15px 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .login-page .input-boxx .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #888;
+  }
+  
+  .login-page .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-page button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .login-page button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-page .custom-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-page .custom-link:hover {
+    text-decoration: underline;
+  }
+  

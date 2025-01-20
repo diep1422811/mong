@@ -1,0 +1,184 @@
+
+/* Khung cố định của slider */
+.featured-section {
+  max-width: 1200px; /* Độ rộng cố định */
+  margin: 0 auto; /* Căn giữa slider */
+  padding: 20px; /* Thêm khoảng cách trong */
+  position: relative;
+  justify-content: center;
+  overflow: hidden; /* Đảm bảo các slide không tràn ra ngoài */
+  background-color: #f8f9fa; /* Màu nền tùy chọn */
+}
+
+.featured-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: center;
+  z-index: 1;
+  overflow: visible;
+}
+
+/* Card sách */
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+  background: none;
+  border: none; /* Bỏ viền */
+  z-index: 1;
+}
+
+/* Hình ảnh sách */
+.book-image {
+  width: 100%; /* Đảm bảo ảnh luôn chiếm toàn bộ chiều rộng container */
+  height: 150px; /* Tự động điều chỉnh chiều cao theo tỉ lệ */
+  max-height: 150px; /* Đặt chiều cao tối đa cho ảnh */
+  object-fit: contain; /* Đảm bảo ảnh không bị cắt xén, giữ tỉ lệ */
+  justify-content: center !important; /* Căn giữa ảnh */
+  margin-bottom: 10px; /* Khoảng cách dưới ảnh */
+  border-radius: 5px; /* Bo góc ảnh */
+}
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Màu nền ban đầu */
+  color: white; /* Màu mũi tên */
+  border: none;
+  border-radius: 50%; /* Bo góc tròn */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px; /* Cỡ chữ */
+  z-index: 1000;
+  transition: all 0.3s ease; /* Thêm hiệu ứng mượt khi hover */
+}
+
+/* Vị trí nút */
+.slick-prev {
+  left: 10px; /* Khoảng cách từ bên trái */
+}
+
+.slick-next {
+  right: 10px; /* Khoảng cách từ bên phải */
+}
+
+/* Hiệu ứng hover */
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: rgba(255, 0, 0, 0.8); /* Đổi màu khi hover */
+  transform: scale(1.2); /* Phóng to nhẹ */
+}
+
+
+/* Tiêu đề */
+.section-title {
+  font-family: "Kanit";
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #ffff;
+}
+
+/* Tag */
+.tags {
+  display: flex;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  gap: 5px; /* Khoảng cách giữa các tag */
+  margin: 10px 0; /* Khoảng cách giữa tag và ảnh */
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 6px; /* Kích thước tag */
+  font-size: 10px; /* Cỡ chữ nhỏ */
+  color: white; /* Màu chữ */
+  background-color: #ff6b6b; /* Màu nền mặc định */
+  border-radius: 5px; /* Bo góc tag */
+  text-transform: uppercase; /* Viết hoa chữ */
+}
+
+.tag.full {
+background: linear-gradient(180deg, rgba(7, 247, 179, 0.87) 10%, rgba(10, 202, 147, 0.87) 79.5%, rgba(63, 165, 136, 0.87) 95%);
+border-radius: 5px;
+
+}
+
+.tag.hot {
+ 
+background: linear-gradient(180deg, rgba(250, 156, 144, 0.87) 10%, rgba(222, 75, 26, 0.87) 54.5%, rgba(244, 61, 25, 0.87) 83.5%);
+border-radius: 5px;
+
+}
+
+.tag.new {
+background: linear-gradient(180deg, rgba(247, 219, 7, 0.87) 20.5%, rgba(188, 153, 47, 0.87) 94.5%, rgba(233, 178, 14, 0.87) 100%);
+border-radius: 5px;
+
+}
+
+/* Tiêu đề sách */
+.book-title {
+  font-size: 14px;
+  text-align: center;
+  margin: 0px 0;
+  white-space: nowrap; /* Chữ hiển thị 1 dòng */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Thêm dấu "..." khi vượt chiều ngang */
+}
+.book-link {
+  text-decoration: none; /* Bỏ gạch chân mặc định */
+}
+
+.book-link:hover .book-title {
+  color: #E53E5D; /* Đổi màu chữ sang hồng khi hover */
+}
+/* Đánh giá sách */
+.rating {
+  font-size: 14px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #464545;
+}
+.btnn {
+  /* Căn chỉnh nút ở mép trái đầu slide */
+  padding: 3px 20px; /* Giảm chiều cao nút */
+  font-size: 12px; /* Giảm kích thước chữ */
+  line-height: 0.25;
+  line-break: 5;
+  bottom: 10px;
+  left: -490px; 
+  margin-top: 20px; /* Tăng khoảng cách với banner trên */
+  margin-bottom: 20px; /* Tăng khoảng cách với slide dưới */
+  
+}
+
+
+.btnn:hover {
+  background-color: #ed0251; /* Màu nền khi hover */
+  color: #fff; /* Màu chữ khi hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng đổ bóng */
+}
+
+.tagbook {
+  /* Rectangle 1 */
+  text-align: left;
+  position: relative;
+  background: #F291A3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.btnn, .tagbooks {
+  border: none; /* Loại bỏ viền mặc định */
+  outline: none; /* Loại bỏ đường viền khi chọn */
+  box-shadow: none; /* Loại bỏ hiệu ứng đổ bóng */
+}
+

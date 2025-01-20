@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #7b4dff; /* Màu chính */
+    --secondary-color: #f47ac2; /* Màu phụ */
+    --hover-color: #d81b60; /* Màu hover */
+    --background-color: #f9f9f9; /* Màu nền */
+    --box-shadow-color: rgba(0, 0, 0, 0.1); /* Màu đổ bóng */
+  }
+  
+  .edit-story-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--box-shadow-color);
+  }
+  
+  /* Tổng quan */
+  .edit-section {
+    padding: 20px;
+    background: linear-gradient(180deg, #ffffff, #f7d5f1);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--box-shadow-color);
+    margin-bottom: 20px;
+  }
+  
+  /* Nút tag */
+  .tag {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tag:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .tag.active {
+    background-color: var(--hover-color);
+    font-weight: bold;
+  }
+  
+  /* Nút thêm chương */
+  .add-chapter-btn {
+    display: inline-block;
+    background: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-chapter-btn:hover {
+    background: #45a049;
+  }
+  
+  /* Tối ưu hóa các mục */
+  .section-box {
+    background: var(--background-color);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px var(--box-shadow-color);
+  }
+  

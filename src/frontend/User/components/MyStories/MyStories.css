@@ -1,0 +1,203 @@
+.book-title {
+    text-align: center !important;
+    margin: 0;
+  }
+  
+.book-actions {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(53, 53, 53, 0.5); /* Nền tối */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Đảm bảo popup nằm trên cùng */
+  }
+  .popup-content h3 {
+    font-size: 26px;
+    color: rgb(243, 111, 140);
+  }
+  .popup-content p {
+    font-size: 18px;
+    color: white;
+  }
+  
+  
+  .popup-content {
+    /* Rectangle 27 */
+    /* Rectangle 15 */
+
+    box-sizing: border-box;
+    background: rgba(49, 49, 49, 0.9);
+    border-width: 3px 4px 4px 3px;
+    border-style: solid;
+    border-color: rgba(239, 108, 133, 0.9);
+    border-radius: 40px;
+    padding: 40px;
+
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng đổ bóng */
+    z-index: 10000; /* Đảm bảo nội dung popup nằm trên nền tối */
+  }
+  
+.popup-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.popup-actions .btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.popup-actions .btn.confirm {
+    background: #df7286;
+    color: white;
+}
+
+
+.popup-actions .btn.confirm:hover {
+    background: #E53E5D;
+    color: white;
+}
+
+.popup-actions .btn.cancel {
+    background: grey;
+    color: white;
+}
+.popup-actions .btn.cancel:hover {
+    background: #413f3f;
+    color: white;
+}
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .book-info {
+    position: relative; /* Để sử dụng position cho icon */
+    padding-bottom: 40px;
+  }
+  
+  .action-buttons {
+    position: absolute;
+    right: 10px; /* Điều chỉnh khoảng cách từ bên phải */
+    display: flex;
+    gap: 10px;
+    bottom: 10px; /* Đặt icon sát mép dưới */
+    right: 10px; /* Đặt icon sát mép phải */
+    display: flex;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .icon.edit-icon, .icon.delete-icon {
+    color: #7777;
+  }
+  
+  .icon.edit-icon:hover {
+    color: #367AF2; /* Màu cho icon chỉnh sửa */
+  }
+  .icon.delete-icon:hover {
+    color: #E53E5D; /* Màu cho icon chỉnh sửa */
+  }
+  
+.my-stories-container {
+  padding: 20px;
+}
+
+.stories-section {
+  margin: 20px 0;
+  padding: 0 40px;
+}
+
+.book-card {
+  padding: 10px;
+  margin: 0 10px;
+  position: relative;
+  transition: transform 0.2s;
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-image-container {
+  display: grid;
+  place-items: center; /* Căn giữa ảnh theo cả hai chiều */
+  width: 100%;
+  height: 280px; /* Đảm bảo chiều cao của container */
+}
+v
+/* Keep your existing CSS and add these new styles */
+
+.action-buttons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.no-stories {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+  margin: 40px 0;
+}
+
+/* Add these styles for the custom arrows */
+.custom-arrow {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(107, 105, 105, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.custom-arrow:hover {
+  background-color: #E53E5D;
+}
+
+.slick-prev.custom-arrow {
+  left: -20px;
+}
+
+.slick-next.custom-arrow {
+  right: -20px;
+}
+  

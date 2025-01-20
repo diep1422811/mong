@@ -1,0 +1,294 @@
+/* Container cho tiêu đề top review */
+.top-review-container {
+  padding: 10px;
+  margin: 20px auto;
+  background-color: #ff6b6b;
+  border-radius: 10px;
+  width: 10%; /* Chỉnh lại chiều rộng để phù hợp với không gian */
+  text-align: center;
+  font-family: 'Kings', sans-serif;
+  font-size: 20px;
+  color: #000;
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho phần này */
+}
+
+/* Container cho ô nhập đánh giá mới */
+.new-review-container {
+  margin: 10px auto;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  position: relative;
+}
+
+/* Ô nhập nội dung đánh giá mới */
+.new-review-input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Biểu tượng gửi (plane) */
+.send-icon {
+  cursor: pointer;
+  font-size: 24px;
+  transition: color 0.3s;
+  position: absolute;
+  right: 10px; /* Đặt biểu tượng "plane" sát phải */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.send-icon:hover {
+  color: red;
+}
+
+/* Container của từng đánh giá */
+.review-container {
+  background-color: #fff;
+  padding: 15px;
+  width: 80%;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Tên người đánh giá */
+.review-username {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Nội dung đánh giá */
+.review-content {
+  margin-bottom: 10px;
+}
+
+/* Container chứa các nút hành động */
+.review-buttons-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Nút like và comment (Icon) */
+.review-like-button,
+.review-comment-button {
+  background-color: transparent;
+  color: grey;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s, transform 0.2s ease;
+}
+
+.review-like-button:hover,
+.review-comment-button:hover {
+  color: #ff6b6b;
+  transform: scale(1.1);
+}
+
+/* Container cho bình luận */
+.comments-container {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Mỗi bình luận */
+.comment {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+/* Tên người bình luận */
+.comment-username {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Nút like của bình luận */
+.comment-like-button {
+  background-color: transparent;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Container cho các hành động của comment */
+.comment-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Icon hành động (sửa, xóa) */
+.action-icon {
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.action-icon:hover {
+  color: red;
+}
+
+/* Ô nhập bình luận */
+.comment-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Container phần nhập bình luận */
+.comment-input-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Biểu tượng gửi bình luận */
+.send-comment-icon {
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+
+.send-comment-icon:hover {
+  color: red;
+}
+
+/* Nút xem thêm hoặc ẩn bớt bình luận */
+.show-more-comments {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Nút lưu chỉnh sửa */
+.save-edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.save-edit-button:hover {
+  background-color: #0056b3;
+}
+/* Giao diện chỉnh sửa đánh giá */
+.edit-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  min-height: 60px;
+}
+
+/* Nút lưu chỉnh sửa cho review */
+.save-edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.save-edit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Giao diện chỉnh sửa bình luận */
+.comment-edit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-edit-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  min-height: 40px;
+}
+
+.comment-edit-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Nút lưu chỉnh sửa bình luận */
+.save-comment-edit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.save-comment-edit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Thêm hiệu ứng cho việc chỉnh sửa */
+.edit-mode {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.save-edit-button {
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+/* Thêm hiệu ứng động cho textarea khi chỉnh sửa */
+.edit-input:focus, .comment-edit-input:focus {
+  border-color: #007bff;
+  outline: none;
+}

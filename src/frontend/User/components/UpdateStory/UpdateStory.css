@@ -1,0 +1,123 @@
+/* Container */
+.edit-story-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-story-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label */
+.form-group label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Input, Select, Textarea - căn giữa */
+.form-group input,
+.form-group select {
+  width: 100%;
+  max-width: 500px; /* Đảm bảo chiều rộng không vượt quá */
+  margin: 0 auto; /* Căn giữa */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  width: 100%;
+  max-width: 500px; /* Đảm bảo chiều rộng không vượt quá */
+  margin: 0 auto; /* Căn giữa */
+  resize: vertical;
+  min-height: 120px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Trường "Giới thiệu" không căn giữa */
+.form-group textarea[name="description"] {
+  margin: 0; /* Bỏ margin tự động để giữ nguyên vị trí của textarea "Giới thiệu" */
+  width: 100%;
+}
+
+/* Buttons */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+button:hover:enabled {
+  background-color: #d43c5e;
+}
+
+button[type="button"] {
+  background-color: #6c757d;
+}
+
+button[type="button"]:hover {
+  background-color: #5a6268;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  padding: 20px;
+}
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.genre-item {
+  width: 30%; /* 3 hộp kiểm trên mỗi hàng */
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  margin-top: 20px;
+}

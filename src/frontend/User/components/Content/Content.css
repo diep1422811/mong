@@ -1,0 +1,24 @@
+.contentcon {
+
+  max-width: 800px;
+  margin: auto;
+  width: 80%;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+  border: 2px solid white; /* Khung trắng xung quanh phần tử */
+  padding: 10px; /* Khoảng cách giữa nội dung và viền */
+  border-radius: 8px; /* Làm tròn các góc của khung */
+  background-color: rgba(255, 255, 255, 0.8); /* Màu nền trắng nhẹ */
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bóng mặc định */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border: 2px solid rgb(187, 95, 95); /* Hiệu ứng chuyển đổi */
+}
+
+.contentcon:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Bóng đậm hơn khi hover */
+  transform: scale(1.02); /* Phóng to nhẹ khung */
+  border-color: #E63E5D; /* Đổi màu khung khi hover */
+}
+

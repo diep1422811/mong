@@ -1,0 +1,8 @@
+.divider {
+    height: 1px; /* Độ dày của đường kẻ */
+    background-color: #000000; /* Màu sắc */
+    width: 55%; /* Chiều rộng đường kẻ */
+    margin: 10px auto; /* Căn giữa và tạo khoảng cách trên dưới */
+  }
+  
+  

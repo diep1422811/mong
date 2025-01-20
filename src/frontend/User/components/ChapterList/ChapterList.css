@@ -1,0 +1,106 @@
+.chapter-list {
+    max-width: 800px; 
+    /* Chiều rộng tối đa của danh sách */
+    max-height: 400px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  }
+  
+  .chapter-item {
+    display: flex; /* Sử dụng Flexbox */
+    justify-content: space-between; /* Canh đều giữa các cột */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 10px 15px; /* Khoảng cách bên trong */
+    border-bottom: 1px solid #ddd; /* Đường gạch chân */
+    cursor: pointer; /* Con trỏ chỉ tay */
+    transition: background-color 0.3s, height 0.3s; /* Hiệu ứng hover và thay đổi chiều cao */
+    height: 50px; /* Chiều cao cố định */
+    min-height: 10px; /* Đảm bảo chiều cao tối thiểu */
+    box-sizing: border-box; /* Bao gồm padding trong kích thước box */
+  }
+  
+  .chapter-item:hover {
+    background-color: #fde4e4; /* Màu nền khi hover */
+ /* Tăng chiều cao khi hover */
+  }
+  
+  .chapter-title {
+    font-weight: normal; /* Chữ thường */
+    color: #615b5b; /* Màu chữ */
+    flex: 1; /* Chiếm 1 phần không gian */
+    text-align: left; /* Căn trái */
+    font-size: 0.8rem; /* Kích thước chữ nhỏ hơn */
+    white-space: nowrap; /* Không xuống dòng */
+    overflow: hidden; /* Ẩn nội dung tràn */
+    text-overflow: ellipsis; /* Thêm dấu ... nếu nội dung quá dài */
+  }
+  .chapter-list .chapter-item .chapter-title {
+    font-size: 1rem; /* Kích thước nhỏ hơn */
+  }
+  
+  
+  
+  
+  .chapter-date {
+    font-size: 0.85rem; /* Kích thước chữ nhỏ hơn */
+    color: #777; /* Màu chữ xám nhạt */
+    flex: 1; /* Chiếm 1 phần không gian */
+    text-align: right; /* Căn giữa */
+  }
+  
+  .view-count {
+    font-size: 0.9rem; /* Kích thước chữ */
+    color: #555; /* Màu chữ xám đậm */
+    display: flex; /* Flexbox để căn chỉnh nội dung */
+    align-items: center; /* Căn giữa nội dung */
+    justify-content: flex-end; /* Canh phải */
+    flex: 1; /* Chiếm 1 phần không gian */
+  }
+  
+  .view-count .eye {
+    margin-left: 5px; /* Khoảng cách giữa chữ và biểu tượng */
+    font-size: 1em; /* Kích thước biểu tượng */
+    color: #999; /* Màu biểu tượng */
+  }
+  
+  .chapter-item:last-child {
+    border-bottom: none; /* Xóa đường viền cuối cùng */
+  }
+  
+  /* Media Queries: Điều chỉnh cho thiết bị nhỏ hơn */
+  @media (max-width: 768px) {
+    .chapter-item {
+      height: 50px; /* Giảm chiều cao */
+      min-height: 50px;
+    }
+  
+    .chapter-title {
+      font-size: 0.9rem; /* Giảm kích thước chữ */
+    }
+  
+    .chapter-date,
+    .view-count {
+      font-size: 0.8rem; /* Giảm kích thước chữ */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .chapter-item {
+      flex-direction: column; /* Chuyển từ hàng sang cột */
+      align-items: flex-start; /* Canh trái */
+      height: auto; /* Tự động thay đổi chiều cao theo nội dung */
+    }
+  
+    .chapter-title,
+    .chapter-date,
+    .view-count {
+      text-align: left; /* Căn trái */
+      margin-top: 5px; /* Khoảng cách giữa các mục */
+    }
+  }
+  

@@ -1,0 +1,111 @@
+.wrapper{
+    max-height: 400px; /* Chiều cao cố định, thay đổi theo nhu cầu */
+    width: 500px;
+    background-color: white;
+    color:black;
+    text-align: center;
+    border-radius: 20px;
+    padding:20px;
+    box-shadow: 0 0 50px pink;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung của form */
+    align-items: center; /* Căn giữa nội dung của form */
+    overflow: auto;
+    gap:30px;
+}
+
+.wrapper:hover{
+    animation:  animate 8s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg)
+    }
+}
+.wrapper h1{
+    font-size: 30px;
+    text-align: center;
+    color:purple;
+}
+.wrapper h2{
+    font-size: 18px;
+    font-style: italic;
+    color: rgba(128, 0, 128, 0.7);
+    font-weight: 400;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 370px;
+    height: 44px;
+    background-color: rgb(229, 183, 229);
+    margin: 10px auto;
+    border-radius: 50px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: rgb(218, 218, 250);
+    font-size: 17px;
+    border:none;
+    border-radius: 30px;
+    padding: 20px 70px 20px 15px;
+}
+
+.input-box input::placeholder{
+    color: rgb(163, 154, 154);
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 20px;
+}
+
+.remember-forgot label input{
+    accent-color: pink;
+    margin-right: 4px;
+}
+.custom-link {
+    color: purple; /* Màu chữ */
+    text-decoration: none; /* Xóa gạch chân */
+    font-size: 14px; /* Cỡ chữ */
+    font-weight: 500; /* Độ đậm */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi */
+  }
+  
+  .custom-link:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+    color: palevioletred; /* Đổi màu chữ khi hover */
+  }
+  
+.wrapper button{
+    width: 300px;
+    height: 40px;
+    margin: 10px 20px 10px 2px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.wrapper button:hover{
+    background-color: rgb(239, 102, 102);
+    color:white;
+    font-weight: 600;
+    font-style: italic;
+    border: none;
+    cursor: pointer;
+}

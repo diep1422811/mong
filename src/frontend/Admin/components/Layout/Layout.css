@@ -1,0 +1,38 @@
+/* Tổng thể Layout */
+.layout {
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 80px;
+  margin-left : 120px;
+  min-height: calc(100vh - 100px);
+  width: calc(100vw - 140px); /* Chiều rộng ban đầu của nội dung */
+  padding: 20px;
+  border: none;
+  background-color: rgba(250, 236, 236, 0.5);
+  box-shadow: 0 0 100px pink;
+  border-radius: 20px;
+  overflow: auto;
+  transition: margin-left 0.3s ease-in-out; /* Điều chỉnh margin-left thay vì position */
+  box-sizing: border-box;
+}
+
+.main-content:hover{
+  animation:  animate 8s linear infinite;
+}
+
+@keyframes animate {
+  100%{
+      filter: hue-rotate(360deg)
+  }
+}
+.main-content h1{
+  font-size: 30px;
+  color:purple;
+}

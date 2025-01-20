@@ -1,0 +1,32 @@
+.title {
+  width: 80%; /* Chiều rộng phần tử .title là 80% */
+  max-width: 800px; /* Giới hạn chiều rộng tối đa là 800px */
+  font-size: 2.5rem;
+  color: #18171b;
+  text-align: center;
+  margin: 10px auto; /* Căn giữa và tạo khoảng cách 50px phía trên và dưới */
+}
+
+.title h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: left;
+  text-indent: 20px;
+  color: hsl(240, 5%, 13%);
+  -webkit-text-stroke: 0.5px #a15f5f;
+  font-family: 'Kings' ;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  
+}
+.title h1:hover, 
+.title h1:active{
+  border-bottom: 2px solid  #cec9dd;
+
+}
+.title h1:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+

@@ -1,0 +1,24 @@
+.reason-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reason-button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .reason-button.selected {
+    background-color: rgb(215, 100, 119); /* Set the background color to pink when selected */
+    color: white;  /* Set the text color to white when selected */
+    font-weight: bold;
+  }
+  
+  .reason-button:hover {
+    background-color: #f0f0f0; /* Add a hover effect for better user experience */
+  }
+  

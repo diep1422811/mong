@@ -1,0 +1,251 @@
+.ui.dropdown {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.ui.compact.selection.dropdown .icon {
+  display: block;
+  margin-left: 10px;
+  margin-right: auto;
+  
+  vertical-align: middle;
+  font-size: 2em;  /* Căn giữa theo chiều dọc */
+}
+
+.ui.compact.selection.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.ui.compact.selection.dropdown .menu {
+  min-width: 300px; /* Thay đổi chiều rộng của menu */
+  max-width: 500px; /* Giới hạn chiều rộng tối đa */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); /* Căn giữa khung menu */
+  top: 100%; 
+  overflow-y: auto;
+  max-height: 150px;/* Đảm bảo menu hiện ra dưới dropdown */
+}
+
+
+
+.ui.dropdown .text {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #3498db;
+}
+
+.ui.dropdown .menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 9;
+}
+
+.ui.dropdown:hover .menu {
+  display: block;
+}
+
+.ui.dropdown .item {
+  padding: 10px;
+  font-size: 1em;
+  color: #3498db;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ui.dropdown .item:hover {
+  background-color: #f1f1f1;
+  color: #2980b9;
+}
+
+.ui.dropdown .item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.chapter-detail-wrapper {
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chapter-title {
+  font-size: 1.8em;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.chapter-info {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #666;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between; /* Đảm bảo khoảng cách giữa các nút đều */
+  align-items: center; /* Căn chỉnh theo chiều dọc */
+  margin: 20px 0; /* Khoảng cách giữa phần trên và dưới */
+}
+
+.nav-button {
+  padding: 10px 20px;
+  background-color: #E53E5D;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.nav-button:hover {
+  background-color: #ffd0dd;
+}
+
+
+
+
+.chapter-content {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 20px;
+}
+/* Bố cục chính của phần bình luận */
+.comments-section {
+  margin-top: 40px;
+  padding: 10 35px;
+  background:#f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.comment-header {
+  font-size: 1.8em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.comment-input {
+  width: 100%;
+  height: 80px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1em;
+  resize: none;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.comment-input:focus {
+  border-color: #3498db;
+}
+
+.post-comment-button {
+  align-self: flex-end;
+  padding: 12px 24px;
+  background: #2ecc71;
+  color: #E53E5D;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-comment-button:hover {
+  background-color: #27ae60;
+}
+
+.comments-list {
+  margin-top: 20px;
+}
+
+.comment-item {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.comment-item .metadata {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.comment-item .comment-text {
+  font-size: 1.1em;
+  color: #444;
+  line-height: 1.6;
+}
+
+.comment-item .actions {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 0.9em;
+}
+
+.comment-item .actions a {
+  cursor: pointer;
+  margin-right: 12px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.comment-item .actions a:hover {
+  color: #2980b9;
+}
+
+.collapse-btn {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.collapse-btn:hover {
+  background-color: #e67e22;
+}

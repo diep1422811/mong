@@ -1,0 +1,89 @@
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: white !important;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.book-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  width: 450px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: row;
+}
+
+.book-card img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.book-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Đảm bảo các thông tin căn trái */
+  text-align: left; /* Đặt text căn trái cho phần thông tin */
+}
+
+.book-title-container {
+  width: 100%; /* Chiếm toàn bộ chiều rộng của `.book-info` */
+  text-align: left;
+  margin-bottom: 5px; /* Thêm khoảng cách giữa tiêu đề và thông tin khác */
+}
+
+.book-title {
+  margin: 0; /* Loại bỏ margin thừa */
+  font-weight: bold;
+  text-align: left;
+}
+.book-title-container h3 {
+  font-size: 18px !important;
+}
+
+
+/* Bỏ gạch chân cho liên kết */
+.book-links {
+  text-decoration: none; /* Không có gạch chân mặc định */
+}
+
+
+.book-links:hover .book-title {
+  color: #E53E5D;
+}
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  background-color: #a5a6f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #8a8bed;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

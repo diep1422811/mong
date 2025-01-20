@@ -1,0 +1,67 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Căn trái */
+    font-size: 26px; /* Kích thước chữ */
+    margin-bottom: 20px;
+    color: #5c0000; /* Màu chữ */
+    margin: 20px 0;
+    font-family: "Georgia", serif; /* Font chữ */
+    text-transform: uppercase; /* Chuyển chữ thường thành chữ in hoa */
+    letter-spacing: 1px; /* Khoảng cách giữa các chữ */
+    position: relative; /* Để thêm gạch ngang */
+    padding: 0 10px; /* Thêm khoảng cách 2 bên */
+}
+
+.breadcrumb::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Khoảng cách từ gạch dưới đến chữ */
+    left: 0; /* Gạch dưới bắt đầu từ trái */
+    right: 0; /* Kéo dài gạch dưới hết chiều rộng */
+    height: 1px;
+    background-color: #5c0000; /* Màu gạch dưới */
+    margin: 0 auto;
+}
+
+.breadcrumb-link {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #5c0000; /* Màu chữ liên kết */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.breadcrumb-link:hover {
+    color: #d4283a; /* Đổi màu chữ khi hover */
+}
+
+.breadcrumb-separator {
+    margin: 0 8px; /* Khoảng cách giữa các thành phần */
+    color: #5c0000; /* Màu của dấu "/" */
+}
+
+.tag-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .tag-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #555;
+  }
+  
